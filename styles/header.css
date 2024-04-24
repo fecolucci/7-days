@@ -1,0 +1,137 @@
+.cabecalho__menu-hamburger {
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/Menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+.container__botao:checked ~ .container__rotulo > .cabecalho__menu-hamburger {
+    background-image: url("../img/Menu-Aberto.svg");
+}
+
+.container__botao:checked ~ .container__rotulo {
+    background: var(--bordo);
+}
+
+.cabecalho {
+    background-color: var(--branco);
+    display: flex;
+    align-items: center;
+    margin: 1em;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container__imagem {
+    padding: 0.5em;
+}
+
+.lista-menu {
+    display: none;
+    width: 60vw;
+    position: absolute;
+    top: 100%;
+}
+
+.container__botao:checked ~ .lista-menu {
+    display: block;
+}
+
+.lista-menu__item {
+    padding: 0.8em;
+    background-color: var(--branco);
+    width: 15em;
+}
+
+.lista-menu__link {
+    text-decoration: none;
+    color: var(--cinza-escuro);
+}
+
+.container__botao {
+    display: none;
+}
+
+.container__titulo{
+    display: none;
+}
+
+.container.final {
+    margin-left: auto;
+}
+
+.container.final a {
+    text-decoration: none;
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.container__entrar {
+    color: var(--cinza-claro);
+}
+
+.container__cadastrar {
+    background-color: var(--bordo);
+    color: var(--branco);
+    border-radius: 8px;
+    padding: 0.8em;
+    margin-left: 1em;
+    box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.3);
+    letter-spacing: 0.5px;
+}
+
+
+
+@media screen and (min-width: 976px) {
+    .container__titulo {
+        display: block;
+        font-family: var(--fonte-principal);
+        font-size: 18px;
+        font-weight: 500;
+        color: var(--cinza-escuro);
+    }
+
+    .cabecalho__menu-hamburger {
+        display: none;
+    }
+
+    .lista-menu {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        position: relative;
+    }
+
+    .lista-menu__item {
+        padding: 1em;
+        width: auto;
+    }
+
+    .lista-menu__item a{
+        font-family: var(--fonte-principal);
+        font-size: 16px;
+        font-weight: 500;
+        color: var(--cinza-claro);
+    }
+
+    .cabecalho {
+        justify-content: space-between;
+        margin: 1em 5em;
+    }
+
+    .container.final {
+        margin-left: 0;
+    }
+
+    .container.final a {
+        font-size: 16px;
+    }
+}
+
