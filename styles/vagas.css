@@ -10,15 +10,16 @@
     display: flex;
     flex-direction: column;
     gap: 2.5em;
-    padding: 1.5em;
-    margin: 0 0 1em 0;
+    padding: 1em;
+    margin: 1.5em 2em;
 }
 
 .vagas__titulo {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     color: var(--azul-marinho);
-    margin: 2em 0;
+    margin: 0 1.5em;
+    font-weight: 600;
 }
 
 .vagas__informacoes__titulo {
@@ -35,17 +36,48 @@
     gap: 1em;
 }
 
-@media screen and (min-width: 976px) {
+.vagas__container {
+    margin: 1em 0;
+}
+
+@media screen and (min-width: 720px) {
     
     .vagas__informacoes {
-        padding: 2em 30.5em 2em 1.5em;
+        padding: 2em 18em 2em 1.5em;
     }
+
+    .vagas__titulo {
+        font-size: 20px;
+        
+    }
+
+    .vagas__informacoes__titulo {
+        font-size: 20px;
+    }
+
+    .vagas__informacoes__condicoes {
+        font-size: 18px;
+    }
+
 }
 
 
 @media screen and (min-width: 1728px) {
 
     .vagas__informacoes {
-        padding: 2em 30.5em 2em 1.5em;
+        padding: 2em 45em 2em 1.5em;
+    }
+
+    .vagas__titulo {
+        font-size: 22px;
+        
+    }
+
+    .vagas__informacoes__titulo {
+        font-size: 22px;
+    }
+
+    .vagas__informacoes__condicoes {
+        font-size: 20px;
     }
 }
